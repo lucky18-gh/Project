@@ -7,112 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GROCERY STORE</title>
 
-    <link rel="icon" type="image/icon" href="image/favicon.PNG">
+    <link rel="icon" type="images/icon" href="images/favicon.PNG">
 
     <!-- CODE FOR FONT AWESOME CDN-->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ font- awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- CODE FOR FONT AWESOME CDN-->
-
-    <!--CODE FOR LINKING CSS FILE-->
-    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!--CODE FOR LINKING CSS FILE-->
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="..\Project\style.css">
 
+    <!--CODE FOR LINKING CSS FILE-->
 
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 
 
 
 </head>
 
 <body>
-
     <!--header seaction-->
     <header class="header">
-        <a href="#" class="logo"> <i class="fa fa-shopping-basket" aria-hidden="true"></i> groceries
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket" aria-hidden="true"></i> groceries
         </a>
-
-
         <nav class="navbar">
             <a href="#home">home</a>
             <a href="#features">features</a>
             <a href="#products">products</a>
             <a href="#categories">categories</a>
-            <a href="#review">reviews</a>
+            <a href="#review">review</a>
             <a href="#blogs">blogs</a>
 
-            </na v>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
 
-            <div class="icons">
-                <div class="fa fa-bars" id="menu-btn"></div>
-                <div class="fa fa-search" id="search-btn"></div>
-                <div class="fa fa-shopping-cart" id="cart-btn"></div>
-
-                <div class="fa fa-user" id="login-btn"></div>
-            </div>
-
-            <form class="search-form">
-                <input type="seach" id="search-box" placeholder="Search Here...">
-                <label for="search-box" class="fa fa-search">search</label>
-            </form>
-
-            <div class="shopping-cart">
-                <div class="box">
-                    <i class="fa fa-trash"></i>
-                    <img src="image/cart-img-1.png" alt="watermelon">
-                    <div class="content">
-                        <h3>watermelon</h3>
-                        <span class="price">$5.99/-</span>
-                        <span class="quantity">Qty : 1</span>
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here...">
+            <label for="search-box" class="fas fa-search" id="Search">
+            </label>
+        </form>
 
 
-                    </div>
-                </div>
+        <form action="#" class="login-form">
+            <h3>login now</h3>
+            <input type="email" id="email" name="email" placeholder="your email" class="box" autocomplete="email"
+                required>
+            <input type="password" id="password" name="password" placeholder="your password" class="box"
+                autocomplete="current-password" required>
 
+            <p>Forget Your Password <br> <a href="#" class="btn" style="color: black;">Create Account</a></p>
+            <p>Don't Have An Account <br> <a href="#" class="btn" style="color: black;">Register Now</a></p>
 
-                <div class="box">
-                    <i class="fa fa-trash"></i>
-                    <img src="image/cart-img-2.png" alt="onion">
-                    <div class="content">
-                        <h3>onion</h3>
-                        <span class="price">$4s.99/-</span>
-                        <span class="quantity">Qty : 1</span>
+            <input type="submit" value="login now" class="btn">
 
-                    </div>
-                </div>
-
-                <div class="box">
-                    <i class="fa fa-trash"></i>
-                    <img src="image/cart-img-3.png" alt="meat">
-                    <div class="content">
-                        <h3>chicken</h3>
-                        <span class="price">$7.99/-</span>
-                        <span class="quantity">Qty : 1</span>
-
-                    </div>
-                </div>
-
-                <div class="total"> total : $18.97/- </div>
-                <a href="#" class="btn">checkout</a>
-            </div>
-
-            <form action="#" class="login-form">
-                <h3>login now</h3>
-                <input type="email" placeholder="your email" class="box">
-                <input type="password" placeholder="your password" class="box">
-
-                <p>Forget Your Password <a href="#">Click Here</a></p>
-                <p>Don't Have An Account <a href="#">Create Now</a></p>
-
-                <input type="submit" value="login now" class="btn">
-
-            </form>
+        </form>
     </header>
-
 
 
     <!--header seaction-->
@@ -121,21 +74,20 @@
     <section class="home" id="home">
         <div class="content">
             <h3>Fresh And <span>Organic</span> Products For You</h3>
-            <p>This Website Is Designed By Aryan. Aryan Is Doing PGDCA (Post Graduation Diploma In Computer Application)
-                From Vallabh Government Collage Mandi (H.P).</p>
+            <p>This Website Is Designed By Lucky Thakur. Lucky Is Doing BCA (Bachelor of Computer Application)
+                From Government Degree Collage Barsar (H.P).</p>
 
             <a href="#categories" class="btn">shop now</a>
         </div>
     </section>
     <!--banner section-->
 
-
     <!--our feature section-->
     <section class="features" id="features">
         <h1 class="heading"> our <span>features</span></h1>
         <div class="box-container">
             <div class="box">
-                <img src="image/feature-img-1.png" alt="">
+                <img src="images/feature-img-1.png" alt="Fresh and Organic">
                 <h3>fresh and Organic</h3>
 
                 <p>pure goodness from nature,packed with nutrients and free from chemicals.</p>
@@ -144,26 +96,22 @@
             </div>
 
             <div class="box">
-                <img src="image/feature-img-2.png" alt="">
+                <img src="images/feature-img-2.png" alt="Fast Delivery">
                 <h3>fast delivery</h3>
 
                 <p>freshness at your doorstep in no time! Quick,reliable,and always on time.</p>
                 <a href="#" class="btn">read more</a>
 
-
             </div>
 
-
             <div class="box">
-                <img src="image/feature-img-3.png" alt="">
+                <img src="images/feature-img-3.png" alt="Easy Payments">
                 <h3>easy payments</h3>
 
                 <p>smooth, secure,and hassle-free transactions.Pay your way, with convenience at every step!</p>
                 <a href="#" class="btn">read more</a>
 
-
             </div>
-
 
         </div>
 
@@ -172,146 +120,180 @@
 
     <!--our products section-->
     <section class="products" id="products">
-
         <h1 class="heading"> our <span>products</span></h1>
         <div class="swiper product-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
-                    <img src="image/product-1.png" alt="">
+                    <img src="images/product-1.png" alt="Fresh Orange">
                     <h1>Fresh Orange</h1>
-                    <div class="price"> $12.99/- - 15.99/-</div>
+                    <div class="price">$12.99/- - 15.99/-</div>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
-                    <a href="" class="btn">Add To Cart</a>
+                    <button class="btn"
+                        onclick="addToCart('Fresh Orange', '12.99', 'images/product-1.png'); toggleCart();">Add To
+                        Cart</button>
                 </div>
 
                 <div class="swiper-slide box">
-                    <img src="image/product-2.png" alt="">
+                    <img src="images/product-2.png" alt="Fresh Onions">
                     <h1>Fresh Onions</h1>
-                    <div class="price"> $12.99/- - 15.99/-</div>
+                    <div class="price">$12.99/- - 15.99/-</div>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
-                    <a href="" class="btn">Add To Cart</a>
+                    <button class="btn"
+                        onclick="addToCart('Fresh Onions', '12.99', 'images/product-2.png'); toggleCart();">Add To
+                        Cart</button>
                 </div>
 
                 <div class="swiper-slide box">
-                    <img src="image/product-3.png" alt="">
+                    <img src="images/product-3.png" alt="Fresh Meat">
                     <h1>Fresh Meat</h1>
-                    <div class="price"> $12.99/- - 15.99/-</div>
+                    <div class="price">$12.99/- - 15.99/-</div>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
-                    <a href="" class="btn">Add To Cart</a>
+                    <button class="btn"
+                        onclick="addToCart('Fresh Meat', '12.99', 'images/product-3.png'); toggleCart();">Add To
+                        Cart</button>
                 </div>
 
                 <div class="swiper-slide box">
-                    <img src="image/product-4.png" alt="">
+                    <img src="images/product-4.png" alt="Fresh Cabbage">
                     <h1>Fresh Cabbage</h1>
-                    <div class="price"> $12.99/- - 15.99/-</div>
+                    <div class="price">$12.99/- - 15.99/-</div>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
-                    <a href="" class="btn">Add To Cart</a>
+                    <button class="btn"
+                        onclick="addToCart('Fresh Cabbage', '12.99', 'images/product-4.png'); toggleCart();">Add To
+                        Cart</button>
                 </div>
-
-
-
-
-
             </div>
         </div>
 
         <div class="swiper product-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
-                    <img src="image/product-5.png" alt="">
+                    <img src="images/product-5.png" alt="Fresh Potatoes">
                     <h1>Fresh Potatoes</h1>
-                    <div class="price"> $12.99/- - 15.99/-</div>
+                    <div class="price">$12.99/- - 15.99/-</div>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
-                    <a href="" class="btn">Add To Cart</a>
+                    <button class="btn"
+                        onclick="addToCart('Fresh Potatoes', '12.99', 'images/product-5.png'); toggleCart();">Add To
+                        Cart</button>
                 </div>
 
                 <div class="swiper-slide box">
-                    <img src="image/product-6.png" alt="">
+                    <img src="images/product-6.png" alt="Fresh Avocado">
                     <h1>Fresh Avocado</h1>
-                    <div class="price"> $12.99/- - 15.99/-</div>
+                    <div class="price">$12.99/- - 15.99/-</div>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
-                    <a href="" class="btn">Add To Cart</a>
+                    <button class="btn"
+                        onclick="addToCart('Fresh Avocado', '12.99', 'images/product-6.png'); toggleCart();">Add To
+                        Cart</button>
                 </div>
 
                 <div class="swiper-slide box">
-                    <img src="image/product-7.png" alt="">
+                    <img src="images/product-7.png" alt="Fresh Carrots">
                     <h1>Fresh Carrots</h1>
-                    <div class="price"> $12.99/- - 15.99/-</div>
+                    <div class="price">$12.99/- - 15.99/-</div>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
-                    <a href="" class="btn">Add To Cart</a>
+                    <button class="btn"
+                        onclick="addToCart('Fresh Carrots', '12.99', 'images/product-7.png'); toggleCart();">Add To
+                        Cart</button>
                 </div>
 
                 <div class="swiper-slide box">
-                    <img src="image/product-8.png" alt="">
-
+                    <img src="images/product-8.png" alt="Fresh Lemons">
                     <h1>Fresh Lemons</h1>
-                    <div class="price"> $12.99/- - 15.99/-</div>
+                    <div class="price">$12.99/- - 15.99/-</div>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
-                    <a href="" class="btn">Add To Cart</a>
+                    <button class="btn"
+                        onclick="addToCart('Fresh Lemons', '12.99', 'images/product-8.png'); toggleCart();">Add To
+                        Cart</button>
                 </div>
-
-
-
-
             </div>
         </div>
-
-
-
-
     </section>
-    <!--our products section-->
 
+    <script>
+        var swiper = new Swiper('.product-slider', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        var reviewSwiper = new Swiper('.review-slider', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+    <!--our products section-->
 
 
 
@@ -322,28 +304,28 @@
         <h1 class="heading"> product <span>categories</span></h1>
         <div class="box-container">
             <div class="box">
-                <img src="image/cat-1.png" alt="">
+                <img src="images/cat-1.png" alt="Vegetables">
                 <h3>Vegetables</h3>
                 <p>Upto 45% Off</p>
                 <a href="#products" class="btn">shop now</a>
             </div>
 
             <div class="box">
-                <img src="image/cat-2.png" alt="">
+                <img src="images/cat-2.png" alt="Fresh Fruits">
                 <h3>Fresh Fruits</h3>
                 <p>Upto 35% Off</p>
                 <a href="#products" class="btn">shop now</a>
             </div>
 
             <div class="box">
-                <img src="image/cat-3.png" alt="">
+                <img src="images/cat-3.png" alt="Dairy Products">
                 <h3>Dairy Products</h3>
                 <p>Upto 25% Off</p>
                 <a href="#products" class="btn">shop now</a>
             </div>
 
             <div class="box">
-                <img src="image/cat-4.png" alt="">
+                <img src="images/cat-4.png" alt="Fresh Meat">
                 <h3>Fresh Meat</h3>
                 <p>Upto 35% Off</p>
                 <a href="#products" class="btn">shop now</a>
@@ -351,15 +333,187 @@
         </div>
     </section>
 
-
     <!--our categories section-->
 
+    <!--cart section-->
+    <!-- Cart Overlay -->
+    <button class="cart-overlay" id="cartOverlay" onclick="toggleCart()" aria-label="Close cart"></button>
 
+    <!-- Cart Drawer -->
+    <section class="cart-section">
+        <div class="cart-drawer" id="cartDrawer">
+            <div class="cart-header">
+                <h2 class="heading"> Your <span> Cart </span></h2>
+                <button class="close-btn" onclick="toggleCart()" aria-label="Close">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart"><i class="fas fa-inbox"></i> Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <h3>Total: <span id="totalPrice">$0.00</span></h3>
+                </div>
+                <button class="btn" onclick="generateReceipt();"
+                    style="width: 100%; text-align: center; color: black;">Checkout</button>
+            </div>
+        </div>
+    </section>
 
+    <script>
+        let cart = [];
 
+        function addToCart(productName, productPrice, productImage) {
+            const item = {
+                name: productName,
+                price: Number.parseFloat(productPrice),
+                image: productImage,
+                quantity: 1
+            };
+
+            const existingItem = cart.find(p => p.name === productName);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push(item);
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            const totalPrice = document.getElementById('totalPrice');
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="empty-cart"><i class="fas fa-inbox"></i> Your cart is empty</p>';
+                totalPrice.textContent = '$0.00';
+                return;
+            }
+
+            let total = 0;
+            cartItems.innerHTML = cart.map((item, index) => {
+                total += item.price * item.quantity;
+                return `
+                    <div class="cart-box">
+                        <img src="${item.image}" alt="${item.name}">
+                        <div class="content">
+                            <h3>${item.name}</h3>
+                            <span class="price">$${item.price.toFixed(2)}</span>
+                            <div class="quantity-controls">
+                                <button onclick="updateQuantity(${index}, -1)">-</button>
+                                <span class="quantity">${item.quantity}</span>
+                                <button onclick="updateQuantity(${index}, 1)">+</button>
+                            </div>
+                        </div>
+                        <i class="fa fa-trash" onclick="removeFromCart(${index})"></i>
+                    </div>
+                `;
+            }).join('');
+
+            totalPrice.textContent = `$${total.toFixed(2)}`;
+        }
+
+        function updateQuantity(index, change) {
+            cart[index].quantity += change;
+            if (cart[index].quantity <= 0) {
+                removeFromCart(index);
+            } else {
+                updateCart();
+            }
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function toggleCart() {
+            document.getElementById('cartDrawer').classList.toggle('show');
+            document.getElementById('cartOverlay').classList.toggle('show');
+        }
+    </script>
+
+    <section>
+        <!-- Receipt Modal -->
+        <div class="receipt-modal" id="receiptModal">
+            <div class="receipt-container">
+                <button class="close-receipt-btn" onclick="closeReceipt()" aria-label="Close">&times;</button>
+                <div class="receipt-content" id="receiptContent">
+                    <!-- Receipt will be generated here -->
+                </div>
+                <div class="receipt-actions">
+                    <button class="btn" onclick="printReceipt()">Print Receipt</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function generateReceipt() {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+
+            let total = 0;
+            let receiptHTML = `
+                <div class="receipt-header">
+                    <h2>Receipt</h2>
+                    <p>Thank you for your purchase!</p>
+                </div>
+                <div class="receipt-items">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                receiptHTML += `
+                    <tr>
+                        <td>${item.name}</td>
+                        <td>${item.quantity}</td>
+                        <td>$${item.price.toFixed(2)}</td>
+                        <td>$${itemTotal.toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+
+            receiptHTML += `
+                        </tbody>
+                    </table>
+                </div>
+                <div class="receipt-total">
+                    <h3>Grand Total: $${total.toFixed(2)}</h3>
+                </div>
+            `;
+
+            document.getElementById('receiptContent').innerHTML = receiptHTML;
+            document.getElementById('receiptModal').classList.add('show');
+            toggleCart();
+        }
+
+        function closeReceipt() {
+            document.getElementById('receiptModal').classList.remove('show');
+        }
+
+        function printReceipt() {
+            const printWindow = window.open('', '', 'height=600,width=800');
+            printWindow.document.write(document.getElementById('receiptContent').innerHTML);
+            printWindow.document.close();
+            printWindow.print();
+        }
+    </script>
+    <!--cart section-->
 
     <!--review section-->
-
 
 
     <section class="review" id="review">
@@ -367,63 +521,64 @@
         <div class="swiper review-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
-                    <img src="image/pic-1.png" alt="">
-                    <p>The food quality is fresh and well-packaged,ensuring a great experience.The delivery service is
+                    <img src="images/pic-1.png" alt="Customer Review">
+                    <p>The food quality is fresh and well-packaged,ensuring a great experience.The delivery service
+                        is
                         prompt and reliable, making shopping convenient.</p>
                     <h3>John Deo</h3>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
                 </div>
 
-
                 <div class="swiper-slide box">
-                    <img src="image/pic-2.png" alt>
-                    <p>The food quality is fresh and well-packaged,ensuring a great experience.The delivery service is
+                    <img src="images/pic-2.png" alt="Customer Review">
+                    <p>The food quality is fresh and well-packaged,ensuring a great experience.The delivery service
+                        is
                         prompt and reliable, making shopping convenient.</p>
                     <h3>Jennifer</h3>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
                 </div>
 
-
                 <div class="swiper-slide box">
-                    <img src="image/pic-3.png" alt="">
-                    <p>The food quality is fresh and well-packaged,ensuring a great experience.The delivery service is
+                    <img src="images/pic-3.png" alt="Customer Review">
+                    <p>The food quality is fresh and well-packaged,ensuring a great experience.The delivery service
+                        is
                         prompt and reliable, making shopping convenient.</p>
                     <h3>Christopher</h3>
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
                 </div>
 
-
                 <div class="swiper-slide box">
-                    <img src="image/pic-4.png" alt="">
-                    <p>The food quality is fresh and well-packaged,ensuring a great experience.The delivery service is
+                    <img src="images/pic-4.png" alt="Customer Review">
+                    <p>The food quality is fresh and well-packaged,ensuring a great experience.The delivery service
+                        is
 
                         prompt and reliable, making shopping convenient.</p>
                     <h3>Scarlet</h3>
 
                     <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
                     </div>
                 </div>
             </div>
@@ -431,7 +586,6 @@
     </section>
 
     <!--review section-->
-
 
 
 
@@ -442,44 +596,47 @@
         <h1 class="heading"> Our <span>Blogs</span></h1>
         <div class="box-container">
             <div class="box">
-                <img src="image/blog-1.jpg" alt="">
+                <img src="images/blog-1.jpg" alt="Blog 1">
                 <div class="content">
                     <div class="icons">
-                        <a href="#"><i class="fa fa-user"></i> By John </a>
-                        <a href="#"><i class="fa fa-calendar"></i> 1st May, 2023 </a>
+                        <a href="#"><i class="fas fa-user"></i> By John </a>
+                        <a href="#"><i class="fas fa-calendar"></i> 1st May, 2023 </a>
                     </div>
                     <h3>"Fresh From The Farm To Your Plate"</h3>
-                    <p>Experience the taste of organic, seasonal poduce, ensuring health, fresness, and sustainability
+                    <p>Experience the taste of organic, seasonal poduce, ensuring health, fresness, and
+                        sustainability
                         in every bite!</p>
                     <a href="#" class="btn">read more</a>
                 </div>
             </div>
 
             <div class="box">
-                <img src="image/blog-2.jpg" alt="">
+                <img src="images/blog-2.jpg" alt="Blog 2">
                 <div class="content">
                     <div class="icons">
-                        <a href="#"><i class="fa fa-user"></i> By Jennifer </a>
-                        <a href="#"><i class="fa fa-calendar"></i> 1st May, 2023 </a>
+                        <a href="#"><i class="fas fa-user"></i> By Jennifer </a>
+                        <a href="#"><i class="fas fa-calendar"></i> 1st May, 2023 </a>
                     </div>
                     <h3>"Fresh From The Farm To Your Plate"</h3>
-                    <p>Experience the taste of organic, seasonal poduce, ensuring health, fresness, and sustainability
+                    <p>Experience the taste of organic, seasonal poduce, ensuring health, fresness, and
+                        sustainability
                         in every bite!</p>
                     <a href="#" class="btn">read more</a>
                 </div>
             </div>
 
             <div class="box">
-                <img src="image/blog-3.jpg" alt="">
+                <img src="images/blog-3.jpg" alt="Blog 3">
 
                 <div class="content">
                     <div class="icons">
-                        <a href="#"><i class="fa fa-user"></i> By Chris </a>
-                        <a href="#"><i class="fa fa-calendar"></i> 1st May, 2023 </a>
+                        <a href="#"><i class="fas fa-user"></i> By Chris </a>
+                        <a href="#"><i class="fas fa-calendar"></i> 1st May, 2023 </a>
                     </div>
 
                     <h3>"Fresh From The Farm To Your Plate"</h3>
-                    <p>Experience the taste of organic, seasonal poduce, ensuring health, fresness, and sustainability
+                    <p>Experience the taste of organic, seasonal poduce, ensuring health, fresness, and
+                        sustainability
                         in every bite!</p>
                     <a href="#" class="btn">read more</a>
                 </div>
@@ -488,22 +645,20 @@
     </section>
     <!--blogs section-->
 
-
     <!--footer section-->
     <section class="footer">
         <div class="box-container">
             <div class="box">
-                <h3> Groco <i class="fa fa-shopping-basket"></i></h3>
+                <h3> Groco <i class="fas fa-shopping-basket"></i></h3>
                 <p>Feel Free To Follow Us On Our Social Media Handlers All The Links Are Given Below.</p>
                 <div class="share">
-                    <a href="#" class="fa fa-facebook">Facebook</a>
-                    <a href="#" class="fa fa-twitter">Twitter</a>
-                    <a href="#" class="fa fa-instagram">Instagram</a>
-                    <a href="#" class="fa fa-whatsapp">Whatsapp</a>
+                    <a href="#" class="fab fa-facebook" aria-label="Facebook"></a>
+                    <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                    <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                    <a href="#" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
 
                 </div>
             </div>
-
 
 
 
@@ -517,11 +672,10 @@
 
             <div class="box">
                 <h3> Contact Info </h3>
-                <a href="#" class="links"><i class="fa fa-phone"></i> +91 8765738922 </a>
-                <a href="#" class="links"><i class="fa fa-phone"></i> +91 7563738929 </a>
-                <a href="#" class="links"><i class="fa fa-envelope"></i> info@example.com </a>
-                <a href="#" class="links"><i class="fa fa-map-marker"></i> Mandi, Himachal Pradesh - 175001
-
+                <a href="#" class="links"><i class="fas fa-phone"></i> +91 8765738922 </a>
+                <a href="#" class="links"><i class="fas fa-phone"></i> +91 7563738929 </a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> info@example.com </a>
+                <a href="#" class="links"><i class="fas fa-map-marker"></i> Barsar, Himachal Pradesh - 174305 </a>
 
 
 
@@ -531,53 +685,67 @@
 
             <div class="box">
                 <h3> Quick Links </h3>
-                <a href="#home" class="links"><i class="fa fa-arrow-right"></i> Home </a>
-                <a href="#features" class="links"><i class="fa fa-arrow-right"></i> Features </a>
-                <a href="#products" class="links"><i class="fa fa-arrow-right"></i> Products </a>
-                <a href="#categories" class="links"><i class="fa fa-arrow-right"></i> Categories </a>
-                <a href="#review" class="links"><i class="fa fa-arrow-right"></i> Review </a>
-                <a href="#blogs" class="links"><i class="fa fa-arrow-right"></i> Blogs </a>
+                <a href="#home" class="links"><i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#features" class="links"><i class="fas fa-arrow-right"></i> Features </a>
+                <a href="#products" class="links"><i class="fas fa-arrow-right"></i> Products </a>
+                <a href="#categories" class="links"><i class="fas fa-arrow-right"></i> Categories </a>
+                <a href="#review" class="links"><i class="fas fa-arrow-right"></i> Review </a>
+                <a href="#blogs" class="links"><i class="fas fa-arrow-right"></i> Blogs </a>
 
             </div>
-
 
             <div class="box">
 
                 <h3> Newsletter </h3>
                 <p>Join Our Premium Services For Latest Updates And Free Delivery</p>
-                <input type="email" placeholder="Your Email" class="email">
-                <input type="submit" value="Join now" class="btn">
+                <form onsubmit="handleNewsletterSignup(event)">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Your Email" class="email"
+                        autocomplete="email" required>
+                    <input type="submit" value="Join now" class="btn">
+                </form>
 
-                <img src="image/payment.png" class="payment-img" alt="">
+                <img src="images/payment.png" class="payment-img" alt="Payment Methods">
 
             </div>
 
         </div>
 
-
-        <div class="credit">Created By <span>Aryan Patyal</span> | All Rights Reserved</div>
-
-
-
+        <div class="credit">Created By <span>Lucky Thakur</span> | All Rights Reserved</div>
 
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
+    <section>
+        <div class="about-section">
+            <div class="about-container">
+                <h2>About Our Grocery Store</h2>
+                <p>Welcome to Groco, your trusted online destination for fresh and organic groceries. We are committed
+                    to bringing farm-fresh produce directly to your doorstep with quality assurance and exceptional
+                    service. Since our inception, we have been dedicated to revolutionizing the way people shop for
+                    groceries online.</p>
+                <p>Our mission is to make healthy eating accessible and convenient for everyone. We partner with local
+                    farmers and trusted suppliers to ensure the freshest products while maintaining competitive prices
+                    and fast delivery. We believe that everyone deserves access to high-quality, pesticide-free produce
+                    without compromising on affordability.</p>
+                <p>At Groco, we pride ourselves on our rigorous quality control standards and commitment to customer
+                    satisfaction. Our team works tirelessly to source the best products, maintain optimal freshness
+                    during
+                    storage and transportation, and ensure that every order meets our high standards. We are passionate
+                    about
+                    supporting sustainable agriculture and reducing environmental impact through responsible sourcing
+                    practices.</p>
+                <p>Whether you're looking for fresh vegetables, fruits, dairy products, or premium meats, Groco has
+                    everything
+                    you need for a healthy lifestyle. Thank you for choosing us as your preferred grocery partner. We
+                    look forward
+                    to serving you and your family with excellence.</p>
+            </div>
+        </div>
+    </section>
     <!--footer section-->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="js/script.js"></script>
+    <script src="..\Project\script.js"></script>
 </body>
 
 </html>
