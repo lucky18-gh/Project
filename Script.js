@@ -2,9 +2,6 @@ let searchForm = document.querySelector('.search-form'); document.querySelector(
     searchForm.classList.toggle('active'); shoppingCart.classList.remove('active'); loginForm.classList.remove('active'); navbar.classList.remove('active');
 }
 
-let shoppingCart = document.querySelector('.shopping-cart'); document.querySelector('#cart-btn').onclick = () => {
-    shoppingCart.classList.toggle('active'); searchForm.classList.remove('active'); loginForm.classList.remove('active'); navbar.classList.remove('active');
-}
 
 let loginForm = document.querySelector('.login-form'); document.querySelector('#login-btn').onclick = () => {
     loginForm.classList.toggle('active'); shoppingCart.classList.remove('active'); searchForm.classList.remove('active'); navbar.classList.remove('active');
@@ -18,15 +15,13 @@ document.querySelector('#menu-btn').onclick = () => {
 
 }
 
-
 window.onscroll = () => {
     searchForm.classList.remove('active'); shoppingCart.classList.remove('active'); loginForm.classList.remove('active'); navbar.classList.remove('active');
 }
 
 
 
-
-var swiper = new Swiper(".product-slider", {
+const productswiper = new Swiper(".product-slider", {
     loop: true, spaceBetween: 20,
     autoplay:
 
@@ -49,7 +44,7 @@ var swiper = new Swiper(".product-slider", {
 });
 
 
-var swiper = new Swiper(".review-slider", {
+const reviewswiper = new Swiper(".review-slider", {
     loop: true,
     spaceBetween: 20, autoplay:
     {
@@ -69,3 +64,5 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+
+
